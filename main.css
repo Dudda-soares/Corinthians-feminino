@@ -143,13 +143,14 @@ section h2 {
     color: #cccc;
 }
 .articles article a {
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.596);
     color: #fff;
     padding: 8px;
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
     margin-top: 8px;
+    border-radius: 3px;
 }
 .articles article a:hover {
     text-decoration: underline;
@@ -164,7 +165,7 @@ section h2 {
 }
 
 
-#historia, #titulos, #jogos, #estrutura{
+#historia, #titulos, #jogos, #estrutura, #contact{
     background-color: rgba(19, 24, 19, 0.712);
 }
 
@@ -173,6 +174,54 @@ section h2 {
 #jogos .articles article a,
 #estrutura .articles article a{
     background-color: #000;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods h3{
+    color: #ffffff;
+    margin: 6px 0;
+}
+.contact-methods {
+    display: flex;
+    justify-content:space-between;
+    margin-left: 100px;
+    padding: 20px;   
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 300px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height:100px;
+}
+form button{
+    background-color: #00000094;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+    
+}
+form button:hover{
+    background-color: #cecece;
+}
+
+input:focus, textarea:focus{
+    outline-color: #e4e4e4;
+}
+footer{
+    background-color: #000000e7;
+    color: #ecf0f1;
+    padding: 16px 0;
 }
 
 
