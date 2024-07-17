@@ -3,13 +3,31 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./imagens/corinthians.preto.jpg');
+    background-size:cover;
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed; 
+   
+}
+
 body > header {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.877);
     padding: 8px auto;  
     color: #f5f6fa;
     position: relative;
-    
-    
+    border: 1px solid #000000; 
+}
+
+header .social-links{
+    position: absolute; 
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 15px;
 }
 header .social-links img{
     height: 25px;
@@ -17,38 +35,15 @@ header .social-links img{
     border-radius: 15px; 
 }
 
-header .social-links{
-    position: absolute; /* Ou 'fixed' para uma imagem fixa */
-    top: 0;
-    right: 0;
-    max-width: 100%;
-    margin: 15px;
-}
-
-.social-links li{
-    display: inline;
-    margin-right: 2px;
-   
-}
-
-.social-links li a{
-    text-decoration: none;
- 
-}
-body{
-    
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./imagens/corinthians.preto.jpg');
-    background-size:cover; /* Mantém a proporção da imagem */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    background-position: center center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Fixa a imagem ao fundo */
-   
-}
 header .container,
 h1 {
     display: flex;
     margin: 0px 20px;
     align-items: center;
+    font-family: "DM Serif Display", serif;
+    font-style:normal;
+    font-weight: 400;
+
 }
 
 header li {
@@ -65,7 +60,7 @@ header li button {
     color: #fff;
     margin-bottom: 10px;
     padding: 10px 20px;
-    border: 1px solid #c7c3c3; /* Borda do botão */
+    border: 1px solid #c7c3c3; 
     display: inline-block;
     text-decoration: none;
     border-radius: 20px;
@@ -76,6 +71,7 @@ header .container li img{
     width: 80px;
     margin: 15px 6px;
 }
+
 .container {
     width: 1295px;
     margin: 0 auto;
@@ -84,6 +80,34 @@ header .container li img{
     cursor: pointer;
 
 }
+.social-links li{
+    display: inline;
+    margin-right: 2px;
+   
+}
+
+.social-links li a{
+    text-decoration: none;
+ 
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    padding: 20px;
+}
+
+section h2 {
+    display: flex;
+    font-size: 30px;
+    margin-left: 100px;
+    color: #ffffff;
+    justify-content:left;
+    font-family: "Abril Fatface", serif;
+}
 
 .articles {
     display: flex;
@@ -91,36 +115,32 @@ header .container li img{
     justify-content: space-evenly;
 
 }
+.articles article{
+    width: 30%;
+}
 .articles article img {
     height: 225px;
     width:110%;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s; 
     object-fit: fill;
-    
 }
+
 .articles article img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
-.articles article{
-    width: 30%;
-}
-
-section{
-    padding: 16px 0;
-}
-section h2,
-.articles article {
-    
-    padding: 20px;
-   
-    
-}
 .articles article h3{
-    margin-top: 8px;
-    margin-bottom: 8px
+    margin: 8px 0;
+    font-size: 24px;
+    color: #ffffffb6;
+}
+
+.articles article p,
+.articles article a {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #cccc;
 }
 .articles article a {
     background-color: blue;
@@ -134,16 +154,7 @@ section h2,
 .articles article a:hover {
     text-decoration: underline;
 }
-.articles article p,
-.articles article a {
-    font-family: "Roboto Condensed", sans-serif;
-    color: #cccc;
-}
-.articles article h3{
-    font-size: 24px;
-    color: #ffffffb6;
 
-}
 .articles header{
     display: flex;
     color: #c7c3c386;
@@ -151,36 +162,17 @@ section h2,
     font-size: 11px;
     justify-content:right;
 }
-section h2 {
-    font-size: 32px;
-    color: #ffffff;
-}
 
 
-#historia {
-    background-color: rgba(19, 24, 19, 0.712)
-}
-#historia .articles article a {
-    background-color: #000000;
-}
-
-#titulos {
-    background-color: rgba(19, 24, 19, 0.712);}
-
-#titulos .articles article a {
-    background-color: #000;
-}
-#jogos {
-    background-color: rgba(19, 24, 19, 0.712);}
-
-#jogos .articles article a {
-    background-color: #000000;
-}
-#estrutura {
+#historia, #titulos, #jogos, #estrutura{
     background-color: rgba(19, 24, 19, 0.712);
 }
-#estrutura .articles article a {
-    background-color: #000000;
+
+#historia .articles article a,
+#titulos .articles article a,
+#jogos .articles article a,
+#estrutura .articles article a{
+    background-color: #000;
 }
 
 
